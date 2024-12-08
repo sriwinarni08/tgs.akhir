@@ -1,0 +1,80 @@
+footer {
+    background-color: #03192e; /* Warna latar belakang */
+    color: #ffff; /* Warna teks */
+    text-align: center; /* Teks rata tengah */
+    width: 100%; /* Pastikan footer meluas penuh */
+    bottom: 0; /* Posisi tepat di bawah */
+    left: 0; /* Pastikan mulai dari kiri layar */
+    right: 0; /* Pastikan meluas hingga kanan layar */
+}
+
+
+.footer-container {
+    display: flex; /* Flexbox untuk tata letak */
+    flex-wrap: wrap; /* Elemen akan turun ke bawah jika layar kecil */
+    justify-content: space-between; /* Elemen saling berjauhan */
+    margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+}
+
+.footer-column {
+    flex: 1; /* Setiap kolom memiliki ukuran proporsional */
+    margin: 10px; /* Jarak antar kolom */
+}
+
+.footer-column img {
+    display: block; /* Agar gambar rapi */
+    margin-bottom: 10px; /* Jarak bawah gambar */
+}
+
+.footer-column h4 {
+    font-size: 18px; /* Ukuran heading */
+    margin-bottom: 10px; /* Jarak bawah heading */
+    color: #d4af37; /* Warna gold untuk heading */
+}
+
+.footer-column ul {
+    list-style: none; /* Hilangkan bullet */
+    padding: 0; /* Hilangkan padding */
+    margin: 0; /* Hilangkan margin */
+}
+
+.footer-column ul li {
+    margin-bottom: 8px; /* Jarak antar item */
+}
+
+.footer-column ul li a {
+    color: #fff; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+.footer-column ul li a:hover {
+    color: #d4af37; /* Warna gold saat hover */
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+}
+
+.social-icons a {
+    margin-right: 10px; /* Jarak antar ikon */
+    display: inline-block;
+}
+
+.app-links img {
+    width: 140px; /* Ukuran gambar app link */
+    margin: 10px 5px; /* Jarak antar gambar */
+}
+
+.copyright {
+    text-align: center; /* Pusatkan teks copyright */
+    font-size: 14px; /* Ukuran font */
+    color: #bbb; /* Warna abu-abu terang */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Kolom vertikal di layar kecil */
+        align-items: center; /* Pusatkan kolom */
+    }
+
+    .footer-column {
+        text-align: center; /* Teks rata tengah di layar kecil */
+    }
+}

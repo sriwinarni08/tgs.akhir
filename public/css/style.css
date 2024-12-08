@@ -1,0 +1,341 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b9c6e4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;   
+    margin-right: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 800px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #021231;
+    font-size: 14px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-right a:hover {
+    color: #007aff;
+}
+
+.header-right .icon {
+    font-size: 20px;
+}
+.containerr{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#7c1d28,#483d99);
+}
+.categorys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+}
+
+.category-item {
+    background: #cbdbe4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.catgory-item:hover .category-image img {
+    opacity: 0.9;
+}
+
+.category-info {
+    padding: 1em;
+    text-align: center;
+}
+
+.category-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+.clients-section h2{
+    color: #000;
+}
+.category-info p {
+    color: #000000;
+    margin: 0.5em 0 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    background-color: #8fa18d4b; /* Warna tetap */
+    color: #1d0000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(20% - 20px); /* Membuat semua elemen fleksibel */
+    max-width: 18%; /* Membatasi lebar */
+}
+
+.section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.section.security ul li {
+    font-size: 14px;
+}
+
+.section p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #eee;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 100%;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+header {
+    background-color: #001f3f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.blog-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(63, 10, 73);
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: #2a4d7e; /* Warna biru lembut */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.blog-content p {
+    font-size: 0.9rem;
+    color: #ddd; /* Warna teks deskripsi */
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr; /* Susun satu kolom untuk layar kecil */
+    }
+}
+
+.our{
+    color: #000;
+}
+
+/*kolom bulet" 
+/* General Styles */
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 40px;
+  }
+  
+  /* Section Styles */
+  .circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+
+  .circle {
+    display: flex;
+    flex-direction: column; /* Tata letak vertikal untuk gambar dan teks */
+    align-items: center; /* Pusatkan elemen di tengah */
+    text-align: center;
+    width: 120px;
+  }
+  
+  .circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .circle img:hover {
+    transform: scale(1.1);
+  }
+  
+  .circle p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
